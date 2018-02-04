@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+    <script src="index.js"></script>
+    <script>
+
+//        var config = {
+//            apiKey: "AIzaSyCxqJkTmz9PgwdE31P8yVQDXSeD8fnBLUo",
+//            authDomain: "napitup-e1ead.firebaseapp.com",
+//            databaseURL: "https://napitup-e1ead.firebaseio.com",
+//            projectId: "napitup-e1ead",
+//            storageBucket: "",
+//            messagingSenderId: "765937973921"
+//        };
+//        firebase.initializeApp(config);
+//
+//
+//        //   var arr = [];
+//
+//
+//
+//        function gotData(data) {
+//
+////        var ref = firebase.database().ref('Users');
+////
+////        ref.on("value", function(snapshot) {
+////            console.log(snapshot.val(), 'snap');
+////            arr.push(snapshot.val());
+////        }, function (error) {
+////            console.log("Error: " + error.code);
+////        });
+////
+////        console.log(arr);
+////
+//
+////        ref.child("Users").on("value", function(snapshot) {
+////            console.log("There are "+snapshot.numChildren()+" users");
+////        })
+//
+//            var userNames =[];
+//            var Pic1 = [];
+//            var Pic2 =[];
+//            var Pic3 = [];
+//            var Pic11 = [];
+//            var query = firebase.database().ref("Users").orderByKey();
+//            query.once("value")
+//                .then(function (snapshot) {
+//                    snapshot.forEach(function (childSnapshot) {
+//
+//                        var key = childSnapshot.key;
+//                        var childData = childSnapshot.val();
+//                        userNames.push(childData.Name);
+//                        Pic1.push(childData.Pic1);
+//                        Pic2.push(childData.Pic2);
+//                        Pic3.push(childData.Pic3);
+//
+//
+//                        Pic11 = Pic1[0];
+//                    });
+//                    console.log(userNames, 'userNames');
+//                    console.log(Pic1, 'pic1');
+//                    console.log(Pic2, 'pic2');
+//                    console.log(Pic3, 'pic3');
+////                    console.log(Pic11);
+//                    document.getElementById("pic11").innerHTML = Pic11;
+//                });
+//
+//
+//
+//        }
+//
+//
+//
+//
+//        gotData();
+//
+//
+//        const Clarifai = require('clarifai');
+//
+//        const app = new Clarifai.App({
+//            apiKey: 'ebfc009e62074178ba50f8b3beaab221'
+//        });
+//
+//        app.models.predict(Clarifai.GENERAL_MODEL, "https://samples.clarifai.com/metro-north.jpg").then(
+//            function(response) {
+//                // do something with response
+//            },
+//            function(err) {
+//                // there was an error
+//            }
+//        );
+//
+//        app.models.predict(Clarifai.GENERAL_MODEL, 'https://samples.clarifai.com/metro-north.jpg').then(
+//            function(response) {
+//                console.log(response);
+//            },
+//            function(err) {
+//                console.error(err);
+//            }
+//        );
+
+
+        /// am using in server side with firebase :) 
+
+
+    </script>
+</head>
+
+<body>
+
+
+<h1> test</h1>
+<div style="display:none" id="pic11"></div>
+
+</body>
+
+</html>
